@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ggtracker/static/css/main.5d2c5e50.css",
+    "main.css": "/ggtracker/static/css/main.9113cff9.css",
     "main.js": "/ggtracker/static/js/main.c6c07a23.js",
     "static/media/background.jpg": "/ggtracker/static/media/background.e3973905ecd463ada68b.jpg",
     "index.html": "/ggtracker/index.html",
-    "main.5d2c5e50.css.map": "/ggtracker/static/css/main.5d2c5e50.css.map",
+    "main.9113cff9.css.map": "/ggtracker/static/css/main.9113cff9.css.map",
     "main.c6c07a23.js.map": "/ggtracker/static/js/main.c6c07a23.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d2c5e50.css",
+    "static/css/main.9113cff9.css",
     "static/js/main.c6c07a23.js"
   ]
 }
