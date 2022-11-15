@@ -54,7 +54,7 @@ html, body {
     margin: auto;
   }
 
-  .details-container, .App {
+  .details-container {
     height: 100%;
   }
 
