@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ggtracker/static/css/main.64268299.css",
+    "main.js": "/ggtracker/static/js/main.d45ba375.js",
+    "static/media/background.jpg": "/ggtracker/static/media/background.e3973905ecd463ada68b.jpg",
+    "index.html": "/ggtracker/index.html",
+    "main.64268299.css.map": "/ggtracker/static/css/main.64268299.css.map",
+    "main.d45ba375.js.map": "/ggtracker/static/js/main.d45ba375.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64268299.css",
+    "static/js/main.d45ba375.js"
+  ]
+}
