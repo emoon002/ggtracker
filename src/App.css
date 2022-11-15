@@ -1,38 +1,69 @@
+html, body {
+  height: 100%;
+}
+
 .App {
-  text-align: center;
+  background: url('/src/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.details-container {
+  height: 100vh;
+  max-width: 1500px;
+  margin: auto;
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.content {
+  padding: 1.5rem;
   color: white;
+  background-color: rgba(51, 51, 51, 0.7);
 }
 
-.App-link {
-  color: #61dafb;
+.transparent {
+  background-color: rgba(51, 51, 51, 0.7);
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.transparent-light {
+  background-color: rgba(153, 255, 153, 0.7);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.link {
+  background-color: rgba(102, 255, 51, 0.7);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+  .active-giveaways {
+    width: 80%;
+    margin: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .details-container, .App {
+    height: 100%;
+  }
+
+  .details-container, .content, .full-img {
+    width: 90%;
+    margin: auto;
+  }
+
+  .content {
+    font-size: 18px;
   }
 }
