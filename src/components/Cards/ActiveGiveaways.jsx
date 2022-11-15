@@ -3,12 +3,19 @@ import React, { useState, useEffect } from 'react'
 const ActiveGiveaways = () => {
 
     let [fetchedData, setFetchedData] = useState([]);
-    const API_URL = 'https://www.gamerpower.com/api/worth';
+    const options = {
+        method: 'GET',
+        headers: {
+          'X-RapidAPI-Key': `${process.env.REACT_APP_API_KEY}`,
+          'X-RapidAPI-Host': 'gamerpower.p.rapidapi.com'
+        }
+      };
+    const API_URL = 'https://gamerpower.p.rapidapi.com/api/worth';
     let {active_giveaways_number, worth_estimation_usd} = fetchedData;
 
     useEffect( () => {
         (async () => {
-            let data = await fetch(API_URL).then(res => res.json()).catch(err => console.log(err));
+            let data = await fetch(API_URL, options).then(res => res.json()).catch(err => console.log(err));
             setFetchedData(data);
         })()
     })
