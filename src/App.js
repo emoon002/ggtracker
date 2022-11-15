@@ -35,7 +35,7 @@ const Home = () => {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': 'b205ba3b00msh5ec548ab7b7bc9dp194b33jsna4e2bc0fed74',
+      'X-RapidAPI-Key': `${process.env.REACT_APP_API_KEY}`,
       'X-RapidAPI-Host': 'gamerpower.p.rapidapi.com'
     }
   };
