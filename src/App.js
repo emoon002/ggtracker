@@ -58,7 +58,7 @@ const Home = () => {
 
   useEffect(() => {
     (async () => {
-      let data = await fetch(API_URL, options).then(res => res.json()).catch(err => console.log(err));
+      let data = await fetch(API_URL, options).then(res => res.json()).catch(err => console.log(JSON.parse(err)));
       updateFetchedData(data);
     })()
   })
