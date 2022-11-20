@@ -8,6 +8,7 @@ html, body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  overflow: scroll;
 }
 
 .details-container {
@@ -32,10 +33,6 @@ html, body {
   background-color: rgba(153, 255, 153, 0.7);
   padding: 1rem;
   border-radius: 20px;
-}
-
-.full-img {
-  object-fit: contain;
 }
 
 .link {
