@@ -24,7 +24,7 @@ const Cards = ({ fetchedData }) => {
             )
         })
     } else {
-        display = <div className='fs-2 text-center transparent-light fw-bold text-info'>{fetchedData.status_message}</div>
+        display = <div className='fs-2 text-center transparent-light fw-bold text-info'>{fetchedData.status_message} || No offers found! Check filter paramters and try again.</div>
     }
 
     return <>{display}</>
