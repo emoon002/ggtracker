@@ -24,7 +24,7 @@ const Cards = ({ fetchedData }) => {
             )
         })
     } else {
-        display = <div className='fs-2 text-center transparent-light fw-bold text-info'>{fetchedData.status_message} || No offers found! Check filter paramters and try again.</div>
+        display = <div className='fs-2 text-center transparent-light fw-bold text-info'>{fetchedData.status_message === undefined ? 'No offers found! Check filter parameters and try again.' : fetchedData.status_message}</div>
     }
 
     return <>{display}</>
